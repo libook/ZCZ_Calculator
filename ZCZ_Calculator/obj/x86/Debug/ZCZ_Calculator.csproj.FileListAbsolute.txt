@@ -1,0 +1,6 @@
+D:\我的文件夹\编程\VS\Visual C#\ZCZ_Calculator\ZCZ_Calculator\bin\Debug\ZCZ_Calculator.exe
+D:\我的文件夹\编程\VS\Visual C#\ZCZ_Calculator\ZCZ_Calculator\bin\Debug\ZCZ_Calculator.pdb
+D:\我的文件夹\编程\VS\Visual C#\ZCZ_Calculator\ZCZ_Calculator\obj\x86\Debug\ZCZ_Calculator.Properties.Resources.resources
+D:\我的文件夹\编程\VS\Visual C#\ZCZ_Calculator\ZCZ_Calculator\obj\x86\Debug\ZCZ_Calculator.csproj.GenerateResource.Cache
+D:\我的文件夹\编程\VS\Visual C#\ZCZ_Calculator\ZCZ_Calculator\obj\x86\Debug\ZCZ_Calculator.exe
+D:\我的文件夹\编程\VS\Visual C#\ZCZ_Calculator\ZCZ_Calculator\obj\x86\Debug\ZCZ_Calculator.pdb
