@@ -105,68 +105,59 @@ namespace ZCZ_Calculator
             didflag = true;
             done();
             string todo = sender.ToString().Substring(35);
-            if (todo.Equals("="))
+            
+            switch(todo)
             {
-                this.textBoxTemp.Text = "结果=";
-                did = "Equal";
-                this.textBoxThis.Text = temp.ToString();
-                return;
-            }
-            if (todo.Equals("+"))
-            {
-                this.textBoxTemp.Text += todo;
-                did = "Plus";
-                this.textBoxThis.Text = "";
-                this.textBoxThis.Text = "0";
-                return;
-            }
-            if (todo.Equals("-"))
-            {
-                this.textBoxTemp.Text += todo;
-                did = "Subtract";
-                this.textBoxThis.Text = "";
-                this.textBoxThis.Text = "0";
-                return;
-            }
-            if (todo.Equals("*"))
-            {
-                this.textBoxTemp.Text += todo;
-                did = "Times";
-                this.textBoxThis.Text = "";
-                this.textBoxThis.Text = "0";
-                return;
-            }
-            if (todo.Equals("/"))
-            {
-                this.textBoxTemp.Text += todo;
-                did = "Divide";
-                this.textBoxThis.Text = "";
-                this.textBoxThis.Text = "0";
-                return;
-            }
-            if (todo.Equals("%"))
-            {
-                this.textBoxTemp.Text += todo;
-                did = "Mod";
-                this.textBoxThis.Text = "";
-                this.textBoxThis.Text = "0";
-                return;
-            }
-            if (todo.Equals("√"))
-            {
-                this.textBoxTemp.Text = "结果=";
-                temp = Math.Sqrt(temp);
-                did = "Equal";
-                this.textBoxThis.Text = temp.ToString();
-                return;
-            }
-            if (todo.Equals("1/x"))
-            {
-                this.textBoxTemp.Text = "结果=";
-                temp = 1 / temp;
-                did = "Equal";
-                this.textBoxThis.Text = temp.ToString();
-                return;
+                case "=":
+                    this.textBoxTemp.Text = "结果=";
+                    did = "Equal";
+                    this.textBoxThis.Text = temp.ToString();
+                    break;
+                case "+":
+                    this.textBoxTemp.Text += todo;
+                    did = "Plus";
+                    this.textBoxThis.Text = "";
+                    this.textBoxThis.Text = "0";
+                    break;
+                case "-":
+                    this.textBoxTemp.Text += todo;
+                    did = "Subtract";
+                    this.textBoxThis.Text = "";
+                    this.textBoxThis.Text = "0";
+                    break;
+                case "*":
+                    this.textBoxTemp.Text += todo;
+                    did = "Times";
+                    this.textBoxThis.Text = "";
+                    this.textBoxThis.Text = "0";
+                    break;
+                case "/":
+                    this.textBoxTemp.Text += todo;
+                    did = "Divide";
+                    this.textBoxThis.Text = "";
+                    this.textBoxThis.Text = "0";
+                    break;
+                case "%":
+                    this.textBoxTemp.Text += todo;
+                    did = "Mod";
+                    this.textBoxThis.Text = "";
+                    this.textBoxThis.Text = "0";
+                    break;
+                case "√":
+                    this.textBoxTemp.Text = "结果=";
+                    temp = Math.Sqrt(temp);
+                    did = "Equal";
+                    this.textBoxThis.Text = temp.ToString();
+                    break;
+                case "1/x":
+                    this.textBoxTemp.Text = "结果=";
+                    temp = 1 / temp;
+                    did = "Equal";
+                    this.textBoxThis.Text = temp.ToString();
+                    break;
+                default:
+                    throw new Exception("系统错误，未指定操作。");
+                    break;
             }
         }
 
